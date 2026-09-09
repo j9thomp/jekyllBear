@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First Post"
-date: 2026-09-09 13:00:00 -0500
+date: 2026-09-09 9:10:00 -0500
 
 # OPTIONAL: Use this for Daring Fireball-style linked posts. 
 # If you include this URL, clicking the post title will take readers here.
