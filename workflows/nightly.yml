@@ -1,0 +1,13 @@
+name: Nightly Build
+on:
+  schedule:
+    # Runs at 05:00 UTC every day (Midnight CDT)
+    - cron: '0 5 * * *'
+  workflow_dispatch: # Allows you to run it manually from the GitHub UI if needed
+
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Cloudflare Deploy Hook
+        run: curl -X POST "${{ secrets.CF_DEPLOY_HOOK }}"
