@@ -2,9 +2,8 @@
 layout: default
 title: what!?
 ---
+this is null modem adapter. 
 
-Welcome to Null Modem Adapter. 
+i plan to use this as my personal space for notes on all aspects of my thinking - from personal hobbies to workplace activities. you might also find occasional nonsensical dispatches when i wander off into places unknown.  for the one person on the planet that finds this blog, enjoy.
 
-This is my personal space for field notes on enterprise IT operations, cloud modernization, and systems architecture. You might also find occasional dispatches from the road.
-
-**[Read the latest posts ↗](/blog/)**
+**[read the latest posts ↗](/blog/)**
