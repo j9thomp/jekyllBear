@@ -160,23 +160,23 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 12px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.4em; /* Slightly smaller to fit "Null Modem Adapter" */
+    font-size: 1.6em; /* Drastically reduced to match Fireball's proportions */
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--heading-color);
     text-decoration: none;
-    white-space: nowrap; /* Forces the text to stay on one line */
+    white-space: nowrap;
 }
 
 .site-logo {
-    height: 40px; 
+    height: 26px; /* Scaled down to match the new 1.6em text height */
     width: auto;
     display: inline-block;
-    /* Basic invert. If your image still looks like a solid block after this, you will need to download a version of the icon with a transparent background (.png) */
     filter: invert(1); 
+    mix-blend-mode: screen; /* This forces the black background to become 100% transparent */
 }
 
 nav a {
