@@ -160,9 +160,9 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 16px; /* Slightly increased gap to balance the larger logo */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.6em; /* Drastically reduced to match Fireball's proportions */
+    font-size: 1.4em; /* Reduced by a smidge */
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -172,11 +172,11 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
 }
 
 .site-logo {
-    height: 26px; /* Scaled down to match the new 1.6em text height */
+    height: 52px; /* Doubled in size */
     width: auto;
     display: inline-block;
     filter: invert(1); 
-    mix-blend-mode: screen; /* This forces the black background to become 100% transparent */
+    mix-blend-mode: screen; 
 }
 
 nav a {
