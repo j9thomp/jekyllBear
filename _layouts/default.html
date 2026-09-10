@@ -4,32 +4,28 @@ layout: compress
 
 {% include head.html %}
 
-    <main>
+<div class="page-container">
+  <aside class="sidebar">
+    <h3>About</h3>
+    <p>A personal space for field notes on enterprise IT operations, cloud modernization, and systems architecture.</p>
+    
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog Feed</a></li>
+      <li><a href="/life/">Life in Weeks</a></li>
+    </ul>
+    
+    <h3>Syndication</h3>
+    <ul>
+      <li><a href="/feed.xml">RSS Feed</a></li>
+    </ul>
+  </aside>
 
-        <div class="page-container">
-        <main class="content-column">
-            {{ content }}
-        </main>
-        
-        <aside class="sidebar">
-            <h3>About</h3>
-            <p>A personal space for field notes on enterprise IT operations, cloud modernization, and systems architecture.</p>
-            
-            <h3>Navigation</h3>
-            <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog/">Blog Feed</a></li>
-            <li><a href="/life/">Life in Weeks</a></li>
-            </ul>
-            
-            <h3>Syndication</h3>
-            <ul>
-            <li><a href="/feed.xml">RSS Feed</a></li>
-            </ul>
-        </aside>
-        </div>
-
-    </main>
+  <main class="content-column">
+    {{ content }}
+  </main>
+</div>
 
     {% include footer.html %}
 
