@@ -13,6 +13,7 @@
     --font-main: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     --font-secondary: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     --font-monospace: Monaco, Consolas, "Courier New", monospace;
+    --font-serif: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
     --font-scale: 1em;
     
     /* Spacing */
@@ -89,8 +90,13 @@ body {
    ============================================================================= */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-main);
+    font-family: var(--font-serif);
     color: var(--heading-color);
+    font-weight: normal;
+}
+
+h1 a, h2 a, h3 a {
+    text-decoration: none;
 }
 
 strong, b {
@@ -336,25 +342,20 @@ input[type=reset] {
 }
 
 .sidebar {
-  width: 250px;
+  width: 200px;
   flex-shrink: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+.sidebar a {
+  text-decoration: none;
 }
 
 .sidebar h3 {
-  margin-top: 0;
-  border-bottom: 1px dotted var(--border-color);
-  padding-bottom: 5px;
-  font-size: 1.1em;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.sidebar li {
-  margin-bottom: 8px;
+  display: none; /* Hides the "Navigation/About" text to match Fireball's minimal links */
 }
 
 /* Mobile Responsiveness: Stack columns on smaller screens */
@@ -364,8 +365,9 @@ input[type=reset] {
   }
   .sidebar {
     width: 100%;
-    border-top: 1px dashed var(--border-color);
-    padding-top: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    text-align: left;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
   }
 }
