@@ -160,9 +160,9 @@ a[href^="http"]:where(:not([href*="knhash.in/"])):not(:has(img))::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 16px; /* Slightly increased gap to balance the larger logo */
+    gap: 18px; /* Slightly increased gap to balance the larger logo */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.4em; /* Reduced by a smidge */
+    font-size: 1.2em;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
