@@ -398,16 +398,42 @@ input[type=reset] {
   margin-bottom: 12px;
 }
 
-/* Mobile Responsiveness: Stack columns on smaller screens */
+/* =============================================================================
+   MOBILE RESPONSIVENESS
+   ============================================================================= */
 @media (max-width: 850px) {
+  /* 1. Shrink the massive desktop margins */
+  .site-banner {
+    padding: 40px 15px 30px 15px;
+  }
+
+  /* 2. Scale down the title and let it wrap so it doesn't break the screen width */
+  .site-title a {
+    font-size: 1.1em;
+    gap: 12px;
+    white-space: normal; 
+  }
+  
+  .site-logo {
+    height: 38px;
+  }
+
+  /* 3. Stack the columns and push the sidebar underneath the blog posts */
   .page-container {
+    display: flex;
     flex-direction: column;
   }
+  
+  .content-column {
+    order: 1; /* Forces the main blog posts to display first */
+  }
+  
   .sidebar {
+    order: 2; /* Forces the sidebar to drop to the bottom of the page */
     width: 100%;
     text-align: left;
-    border-bottom: 1px dashed var(--border-color);
-    padding-bottom: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px dashed var(--border-color);
   }
 }
